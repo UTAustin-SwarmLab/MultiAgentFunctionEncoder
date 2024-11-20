@@ -1,0 +1,20 @@
+{
+    // EDITOR [PYTHON] SETTING
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.inlineSuggest.enabled": true,
+        "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, 'meslolgs nf'",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff": "explicit",
+            "source.organizeImports.ruff": "explicit"
+        },
+    },
+    // RUFF
+    "ruff.enable": true,
+    "ruff.lint.args": ["--config=ruff.toml"],
+
+    // PYTHON SETTING
+    "editor.codeActionsOnSave": {},
+}

@@ -1,0 +1,5 @@
+defaults:
+  - override hydra/launcher: joblib
+
+seed: 42
+repo_root: "/home/pl22767/Project/MultiAgentFunctionEncoder/"

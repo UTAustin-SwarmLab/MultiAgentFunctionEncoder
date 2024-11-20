@@ -6,10 +6,10 @@ build-backend = "setuptools.build_meta"
 exclude = ["Examples", "imgs"]  # exclude packages matching these glob patterns (empty by default)
 
 [project]
-name = "FunctionEncoder"
-version = "0.0.6"
-authors=[{name="Tyler Ingebrand", email="tyleringebrand@utexas.edu"}]
-description = """A package for learning basis functions over arbitrary function sets. This allows even high-dimensional problems to be solved via a minimal number of basis functions. This allows for zero-shot transfer within these spaces, and also a mechanism for fully informative function representation via the coefficients of the basis functions. Hilbert spaces are nifty."""
+name = "MultiAgentFunctionEncoder"
+version = "0.0.1"
+authors=[{name="Po-han Li", email="pohanli@utexas.edu"}]
+description = """A package for learning basis functions over arbitrary function sets in multi-agent networks."""
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
@@ -19,5 +19,21 @@ dependencies = [
     "numpy<=1.26.4"
 ]
 
+[tool.poetry]
+name = "MultiAgentFunctionEncoder"
+version = "0.0.1"
+authors = ["Po-han Li <pohanli@utexas.edu>"]
+packages = [{include = "FunctionEncoder"}]
+description = "Multi-agent function encoder"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ruff = "*"
+numpy = "<=1.26.4"
+pandas = "*"
+torch = ">=2.0"
+tqdm = "*"
+
 [project.urls]
-homepage = "https://github.com/tyler-ingebrand/FunctionEncoder"
+homepage = "https://github.com/UTAustin-SwarmLab/MultiAgentFunctionEncoder"
