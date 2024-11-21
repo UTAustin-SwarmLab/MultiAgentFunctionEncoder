@@ -3,3 +3,15 @@ defaults:
 
 seed: 42
 repo_root: "/home/pl22767/Project/MultiAgentFunctionEncoder/"
+
+avmnist:
+  dataset_path: "/nas/pohan/datasets/avmnist"
+  n_functions_per_sample: 10
+  n_examples_per_sample: 100
+  n_points_per_sample: 100
+  n_basis: 100
+  train_method: least_squares
+  use_residuals_method: false
+  load_path: ""
+  residuals: false
+  epochs: 1000
